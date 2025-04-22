@@ -1,0 +1,11 @@
+.header {
+    background-color: #1976d2;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+h2{
+    padding: 0.5em;
+    background-color: #2f6fae;
+    color: black;
+}  

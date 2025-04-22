@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import PaginaPrincipal from "./pages/PaginaPrincipal";
+
+
 
 function App() {
+
+  const alumno1 = {
+    nombre: 'Juan Manuel',
+    apellido: 'Agostino Colombres',
+    legajo: 61131,
+    github: "https://github.com/JuanmaAgostino",
+    foto:"fotoAgostino.jpeg"
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     <PaginaPrincipal alumno1={alumno1}/>
     </div>
   );
 }
