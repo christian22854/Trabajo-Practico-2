@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    min-width: 250px;
+    max-width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarjeta li {
+    margin-bottom: 10px;
+}
+
+.tarjetad li:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.tarjeta li:nth-child(2) {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.tarjeta li:nth-child(3) {
+    font-size: 1em;
+    color: #777;
+}
+
+.tarjeta a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta a:hover {
+    text-decoration: underline;
+}
+
+.tarjeta img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .tarjeta {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta {
+        width: 100%;
+    }
+}
