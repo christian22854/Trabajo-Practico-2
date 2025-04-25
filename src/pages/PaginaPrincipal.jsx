@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Main from '../components/Main';
 
 
-const PaginaPrincipal = ({alumno1}) => {
+const PaginaPrincipal = ({alumno1, alumnoL}) => {
 
     const [usuarioVerificacion, setUsuarioVerificacion] = useState(false);
     const Verificado = () => {
@@ -16,7 +16,7 @@ const PaginaPrincipal = ({alumno1}) => {
         <div>
 
             {usuarioVerificacion ? <HeaderBienvenida /> : <HeaderInicioSesion />}
-            <Main usuarioVerificacion={usuarioVerificacion} Verificado={Verificado} alumno1={alumno1}/>
+            <Main usuarioVerificacion={usuarioVerificacion} Verificado={Verificado} alumno1={alumno1} alumnoL={alumnoL}/>
             <Footer />
 
         </div>
