@@ -19,7 +19,7 @@ function App() {
     github: "https://github.com/LuquitasLeon",
     foto:"fotoLucas.jpeg"
   }
-  const alumnog = {
+  const alumnoc = {
     nombre: 'Christian Gabriel ',
     apellido: 'Diaz',
     legajo: 61337,
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div >
-     <PaginaPrincipal alumno1={alumno1} alumnoL = {alumnoL}  alumnog = {alumnog} />
+     <PaginaPrincipal alumno1={alumno1} alumnoL = {alumnoL}  alumnog = {alumnoc} />
     </div>
   );
 }
