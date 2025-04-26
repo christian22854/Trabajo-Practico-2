@@ -19,10 +19,17 @@ function App() {
     github: "https://github.com/LuquitasLeon",
     foto:"fotoLucas.jpeg"
   }
+  const alumnog = {
+    nombre: 'Christian Gabriel ',
+    apellido: 'Diaz',
+    legajo: 61337,
+    github: "https://github.com/christian22854 ",
+    foto:"gamu.jpeg.jpg"
+  }
 
   return (
     <div >
-     <PaginaPrincipal alumno1={alumno1} alumnoL = {alumnoL}/>
+     <PaginaPrincipal alumno1={alumno1} alumnoL = {alumnoL}  alumnog = {alumnog} />
     </div>
   );
 }
