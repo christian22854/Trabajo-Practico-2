@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div >
-     <PaginaPrincipal alumno1={alumno1} alumnoL = {alumnoL}  alumnog = {alumnoc} />
+     <PaginaPrincipal alumno1={alumno1} alumnoL = {alumnoL}  alumnoc = {alumnoc} />
     </div>
   );
 }
