@@ -1,0 +1,36 @@
+.login-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .login-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 1rem;
+    background-color: #e3f2fd;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(169, 213, 38, 0.2);
+  }
+
+  .login-formulario input {
+    padding: 0.5rem;
+    border: 1px solid #90caf9;
+    border-radius: 5px;
+  }
+
+  .login-formulario button {
+    padding: 0.7rem;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .login-formulario button:hover {
+    background-color: #1565c0;
+  }
