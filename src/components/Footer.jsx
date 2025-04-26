@@ -3,13 +3,13 @@ import '../style/Footer.css';
 
 const Footer = ({ alumnos }) => {
 
-  const NombresIntegrantes = alumnos
+  const nombresIntegrantes = alumnos
     .map(alumno => `${alumno.nombre} ${alumno.apellido}`)
     .join(', ');
 
   return (
     <footer className="footer">
-      <p>Integrantes: {NombresIntegrantes} </p>
+      <p>Integrantes: {nombresIntegrantes} </p>
     </footer>
   );
 };

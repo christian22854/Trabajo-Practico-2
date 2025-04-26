@@ -1,7 +1,7 @@
 import React from 'react'
 import css from '../style/Integrantes.css'
 
-const Integrantes = ({ alumno1, alumnoL,alumnoc }) => {
+const Integrantes = ({ alumno1, alumnoL }) => {
     return (
         <body>
             <div className='contenedor'>
@@ -22,16 +22,6 @@ const Integrantes = ({ alumno1, alumnoL,alumnoc }) => {
                         <li>{alumnoL.legajo}</li>
                         <li><a href={alumnoL.github}>Github</a></li>
                         <li><figure><img src={require(`../resources/${alumnoL.foto}`)} alt="foto alumno Lucas" /></figure></li>
-                    </ul>
-                </div>
-
-                <div className='tarjeta'>
-                    <ul>
-                        <li>{alumnoc.nombre}</li>
-                        <li>{alumnoc.apellido}</li>
-                        <li>{alumnoc.legajo}</li>
-                        <li><a href={alumnoc.github}>Github</a></li>
-                        <li><figure><img src={require(`../resources/${alumnoc.foto}`)} alt="foto alumno christian" /></figure></li>
                     </ul>
                 </div>
 
