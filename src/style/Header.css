@@ -24,7 +24,7 @@
   font-size: 2em;
 }
 
-.headerI .icono {
+.headerI .iconoI {
   font-size: 1.5em;
 }
 
@@ -48,6 +48,36 @@
   font-size: 2em;
 }
 
-.headerB .icono {
+.headerB .iconoB {
   font-size: 1.5em;
+}
+
+.logout-boton {
+  position: absolute;
+  right: 20px;
+  background-color: #0056b3; /* Un azul más oscuro para diferenciarlo del fondo */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-boton:hover {
+  background-color: #003d82; /* Aún más oscuro al hacer hover */
+}
+
+@media (max-width: 480px) {
+  .headerB h1 {
+      font-size: 1.5em;
+  }
+
+  .logout-boton {
+      padding: 6px 12px;
+      font-size: 0.9em;
+      right: 10px;
+  }
 }

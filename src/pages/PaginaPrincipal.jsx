@@ -8,16 +8,23 @@ import Main from '../components/Main';
 const PaginaPrincipal = ({alumno1, alumnoL}) => {
 
     const [usuarioVerificacion, setUsuarioVerificacion] = useState(false);
+
     const Verificado = () => {
         setUsuarioVerificacion(true);
     }
 
+    const handleLogout = () => {
+        setUsuarioVerificacion(false);
+    };
+
+    const alumnos = [alumno1, alumnoL];
+
     return (
         <div>
 
-            {usuarioVerificacion ? <HeaderBienvenida /> : <HeaderInicioSesion />}
+            {usuarioVerificacion ? <HeaderBienvenida onLogout={handleLogout} /> : <HeaderInicioSesion />}
             <Main usuarioVerificacion={usuarioVerificacion} Verificado={Verificado} alumno1={alumno1} alumnoL={alumnoL}/>
-            <Footer />
+            <Footer alumnos={alumnos} />
 
         </div>
     )

@@ -1,10 +1,15 @@
 import React from 'react';
 import '../style/Footer.css';
 
-const Footer = () => {
+const Footer = ({ alumnos }) => {
+
+  const nombresIntegrantes = alumnos
+    .map(alumno => `${alumno.nombre} ${alumno.apellido}`)
+    .join(', ');
+
   return (
     <footer className="footer">
-      <p><strong>Integrantes: </strong> a a a a a a </p>
+      <p>Integrantes: {nombresIntegrantes} </p>
     </footer>
   );
 };

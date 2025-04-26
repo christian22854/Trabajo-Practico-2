@@ -1,12 +1,14 @@
 import React from 'react';
 import '../style/Header.css';
 
-const Header = () => {
+const Header = ({ onLogout }) => {
   return (
     <header className="headerB">
-      <span class="icono">🔒</span>
+      <span class="iconoB">🔒</span>
       <h1>Bienvenido</h1>
-      <br />
+      <button className="logout-boton" onClick={onLogout}>
+        Cerrar Sesión
+      </button>
     </header>
   );
 };
