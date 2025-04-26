@@ -1,0 +1,85 @@
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 20px;
+  padding-bottom: 80px;
+}
+
+.login-contenedor {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-formulario {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-formulario label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.login-formulario input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-formulario input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.login-formulario button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.login-formulario button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  .login-contenedor {
+    padding: 10px;
+  }
+
+  .login-formulario {
+    padding: 15px;
+  }
+
+  .login-formulario button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
