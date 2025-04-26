@@ -3,7 +3,8 @@ import '../style/Header.css';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="headerI">
+      <span class="iconoI">🏠</span>
       <h1>Iniciar Sesión</h1>
     </header>
   );

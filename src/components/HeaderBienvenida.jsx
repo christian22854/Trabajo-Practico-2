@@ -3,10 +3,10 @@ import '../style/Header.css';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="headerB">
+      <span class="icono">🔒</span>
       <h1>Bienvenido</h1>
       <br />
-      <h2>¡Presentación del grupo!</h2>
     </header>
   );
 };
