@@ -10,7 +10,7 @@ const Main = ({ usuarioVerificacion, Verificado, alumno1, alumnoL,alumnoc }) => 
     return (
         <div>
             <main>
-                {usuarioVerificacion ? <Integrantes alumno1={alumno1} alumnoL={alumnoL}  alumnog={alumnoc}/> : <Formulario Verificado={Verificado} />}
+                {usuarioVerificacion ? <Integrantes alumno1={alumno1} alumnoL={alumnoL}  alumnoc={alumnoc}/> : <Formulario Verificado={Verificado} />}
             </main>
         </div>
     );
